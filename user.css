@@ -13,21 +13,44 @@ body{
 nav{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
     background-color: blueviolet;
-    padding: 30px;
+    padding: 17px;
     z-index: 10;
     webkit-box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);
     -moz-box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);
     box-shadow: 2px 6px 15px 0px rgba(69, 65, 78, 0.1);
 }
+.fordotc{
+    text-align: center;
+}
+.fordotc p{
+    text-transform: capitalize;
+    word-spacing: 5px;
+    font-size: 18px;
+}
 .sidebarcontainer{
     position: fixed;
-    padding: 10px;
+    top: 0;
+    right: 0;
+    /* padding: 10px; */
     background-color: black;
     height: 100%;
-    width: 250px;
+    width: 269px;
     text-align: center;
+    transition: all 0.5s ease;
+}
+.sidebarcontainer i{
+    color: gold;
+}
+.barcontrol{
+    padding: 27px 16px;
+    background-color: blue;
+    text-align: left;
+    cursor: pointer;
+}
+.barcontrol i{
+    font-size: 20px;
 }
 ul{
     margin-top: 20px;
@@ -59,13 +82,16 @@ ul li a{
 ul li a:hover{
     background-color: gray;
 }
+.listholder{
+    margin-left: 15px;
+}
 .mainsectionflex{
     display: flex;
     margin-top: 80px;
 }
 .maincontainer{
-    margin-left: 250px;
-    /* padding: 20px; */
+    margin-right: 250px;
+    padding: 20px;
     background-color: #f3f3f3;
     width: 100%;
 }
@@ -163,18 +189,26 @@ table tr th {
         align-items: center;
         justify-content: space-around;
     }
-
-@media(max-width: 600px){
-    .sidebarcontainer{
+    .fordotd i{
         display: none;
     }
+@media(max-width: 1300px){
+    .sidebarcontainer{
+        right: -300px;
+    }
     .maincontainer{
-        margin-left: 0;
+        margin-right: 0;
     }
     .navflex{
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    nav{
+        width: 100%;
+    }
+   .fordotd i{
+       display: block;
+   } 
 }
 
